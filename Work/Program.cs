@@ -25,7 +25,18 @@ static void PrintArray(string [] array)
 }
 	static void Main(string[] args)
 	{
-
+		Console.Write("Введите число - количество элементов в строчном массиве: count = \t");
+		
+		int count = int.Parse(Console.ReadLine());
+		string [] array1  = new string [count];
+		for(int i = 0; i < array1.Length; i++)
+		{
+			Console.Write($"Введите элемент массива из строк под индексом {i}: \t");
+			array1[i] = Console.ReadLine();
+		}
+		Console.Write("Введенный массив из строк = "); 
+		PrintArray(array1);
+		Console.WriteLine();
 	}
 
 
