@@ -37,6 +37,20 @@ static void PrintArray(string [] array)
 		Console.Write("Введенный массив из строк = "); 
 		PrintArray(array1);
 		Console.WriteLine();
+		int n = 0;
+		string [] array2  = new string [array1.Length];
+      foreach (string arr in array1)
+		{
+			if (arr.Length <= 3)
+			{
+				array2[n] = arr;
+				n = n + 1;
+			}
+		}              
+		Console.WriteLine("Новый массив из строк, длина которых меньше, либо равна 3 символам: ");
+
+		
+	}
 	}
 
 
