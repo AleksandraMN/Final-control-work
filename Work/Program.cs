@@ -48,10 +48,17 @@ static void PrintArray(string [] array)
 			}
 		}              
 		Console.WriteLine("Новый массив из строк, длина которых меньше, либо равна 3 символам: ");
-
 		
+		Console.Write("[");
+		for(int i = 0; i < n; i++)
+		{
+			Console.Write($"'{array2[i]}' " );
+		}
+		Console.Write($"]");
+		Console.WriteLine(); 
+
 	}
-	}
+}
 
 
 
